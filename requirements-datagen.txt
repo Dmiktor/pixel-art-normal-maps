@@ -1,0 +1,14 @@
+# Dataset-generation stack (host Python, NOT Blender's bundled Python).
+objaverse>=0.1.7       # download_characters.py
+datasets>=2.14         # download_characters.py (Objaverse++ index from the Hub)
+huggingface_hub>=0.23  # Hub access / dataset upload
+tqdm>=4.65
+open_clip_torch>=2.20  # clip_filter_blender.py CLIP scoring
+torch>=2.1.0           # required by open_clip
+Pillow>=10.0
+pandas>=2.0
+#
+# NOTE: the actual rendering scripts (blender_pipeline.py, blender_render_single.py)
+# run INSIDE Blender 4.x via its bundled Python ("blender --background --python ...").
+# `bpy` and `mathutils` are provided by Blender and are not installed with pip.
+# Install Blender 4.x separately: https://www.blender.org/download/

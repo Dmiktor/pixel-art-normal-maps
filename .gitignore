@@ -1,0 +1,47 @@
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# ── Virtual environments ─────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── Datasets (published on Hugging Face, not in git) ──────
+dataset/
+new_dataset/
+q_display/
+hf-objaverse-v1/
+accepted_characters/
+downloaded_models/
+*.glb
+*.blend
+*.blend1
+
+# ── Training artifacts / checkpoints (large) ─────────────
+runs/
+*.pth
+*.ckpt
+*.pt
+
+# ── Render dumps / scratch images ────────────────────────
+debug_renders/
+blender_renders/
+first results/
+render_log*.csv
+*.zip
+
+# Keep curated results that ARE tracked:
+!results/**/metrics.csv
+!results/**/*.png
+!results/**/*.csv
+!results/**/*.txt
+
+# ── OS / editor ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

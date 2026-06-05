@@ -1,0 +1,10 @@
+# Core ML stack: training, evaluation, baselines and plotting.
+torch>=2.1.0
+torchvision>=0.16.0
+numpy>=1.24
+Pillow>=10.0
+pandas>=2.0            # reads render_log.csv and per-image metric CSVs
+scikit-image>=0.21     # SSIM fallback
+pytorch-msssim>=0.2.1  # fast GPU SSIM (optional but recommended)
+matplotlib>=3.7        # plot_metrics.py, comparison charts
+scipy>=1.10            # bevel_baseline.py distance transform (optional but recommended)

@@ -1,0 +1,22 @@
+Pixel-Art Normal-Map dataset — pairing report
+=============================================
+Source: new_dataset/{color,normal} (renders from blender_pipeline.py)
+
+Paired images (color name == normal name): 14497
+Unique source 3D models (poses+variants merged): 648
+Color images dropped (no normal match)   : 693
+Normal images dropped (no color match)   : 0
+
+Paired images per render size:
+  032 px : 2739
+  048 px : 2754
+  064 px : 3083
+  080 px : 3158
+  096 px : 2763
+
+Render variants:
+  base pose      : 6499
+  outline (_ol)  : 1650
+  animation frame: 6348
+
+upload_to_hf.py uploads exactly this paired set (color/ + normal/).

@@ -1,0 +1,10 @@
+Method comparison - masked mean angular error (degrees, lower is better)
+Validation set: 1449 images. Metric computed on opaque (silhouette) pixels only.
+==============================================================================
+  size     n     Sobel-lum       Sobel-α   Bevel (EDT)  U-Net (ours)
+  32px   274        53.735        48.904        36.997        32.160
+  48px   275        51.034        44.846        34.209        26.715
+  64px   308        49.610        43.932        35.111        24.851
+  80px   316        47.594        42.482        35.136        23.142
+  96px   276        46.901        41.472        34.978        21.746
+   ALL  1449        49.704        44.261        35.277        25.623
